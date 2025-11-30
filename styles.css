@@ -1,0 +1,54 @@
+text {
+    color: #ffbd00;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #5a1807;
+}
+#Logo {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px
+}
+h1 {
+    display: block;
+    margin-left: 43.5%;
+    color: #ffbd00;
+}
+body {
+    background-color: #5a1807;
+}
+h2 {
+    text-align: center;
+    color: #ffbd00;
+}
+#office {
+    display: block;
+    margin: 0 auto
+}
+#tronics1 {
+   text-align: center;
+}
+#bon {
+    width: 400px;
+}
+#chica {
+    width: 400px;
+    margin-left: 200px;
+}
+#tronics2 {
+    text-align: center;
+}
+#plush {
+    width: 400px;
+}
+#shad_bon {
+    width: 400px;
+    margin-left: 200px;
+}
+footer {
+    color: #ffbd00;
+    text-align: center;
+}
