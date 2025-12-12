@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Page 2</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        header {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-color: #FFBF00;
+        }
+        
+        #Logo {
+            margin-right: 20px;
+        }
+        
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .image-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 200px;
+        }
+        
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+            transition: opacity 0.3s ease;
+        }
+        
+        .image-container:hover img {
+            opacity: 0.3;
+        }
+        
+        .image-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #000;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+            padding: 10px;
+        }
+        
+        .image-container:hover .image-text {
+            opacity: 1;
+        }
+        
+        .image-placeholder {
+            width: 100%;
+            height: 200px;
+            background-color: #e0e0e0;
+            border: 2px dashed #999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+        }
+        
+        .instruction-text {
+            text-align: center;
+            color: #FFFFFF;
+            font-size: 20px;
+            padding: 20px;
+            margin: 0;
+        }
+        
+        footer {
+            background-color: #FFBF00;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        
+        footer h3 {
+            margin: 0;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img id="Logo" src="..\Images/brave_screenshot_docs.google.com.png" alt="UCN Logo">
+        <h1>Header</h1>
+    </header>
+    
+    <p class="instruction-text">Hovering over an animatronic pops up information about it.</p>
+    
+    <main>
+        <div class="image-gallery">
+            <div class="image-container">
+                <img src="rawlings_images/image.png" alt="Image">
+                <div class="image-text">He approaches from the left hall. Keep track of him on the monitor and shut the door when he is standing in the doorway. He moves faster as the building gets warmer.</div>
+            </div>
+            <div class="image-container">
+                <img src="rawlings_images/image (1).png" alt="Image 1">
+                <div class="image-text">He shares Pirate Cove with Foxy, but whereas Foxy will hide from himself when viewed on camera, Bonnie will do the opposite, and become more agitated. View the figurine on the desk to see who is active in Pirate's Cove.</div>
+            </div>
+            <div class="image-container">
+                <img src="rawlings_images/image (2).png" alt="Image 2">
+                <div class="image-text">While Chica doesn't care if the music box is wound up, she can grow tired of the selection playing. When the sound of pots and pans stops, you only have a short amount of time to change the music. The Global Music Box can also soothe her.</div>
+            </div>
+            <div class="image-container">
+                <img src="rawlings_images/image (3).png" alt="Image 3">
+                <div class="image-text">He will gradually leave Pirate's Cove if you don't check on him regularly. Once he is out, he will enter your office piece by piece.</div>
+            </div>
+            <div class="image-container">
+                <img src="rawlings_images/image (4).png" alt="Image 4">
+                <div class="image-text">He sits in the Parts and Service room playing Five Nights With Mr. Hugs on his big screen TV. Click the cams on Toy Freddy's monitor, then be sure that the appropriate door is closed to prevent Mr. Hugs from jumpscaring him.</div>
+            </div>
+            <div class="image-container">
+                <img src="rawlings_images/image (5).png" alt="Image 5">
+                <div class="image-text">Put on your Freddy Fazbear mask quickly when he sneaks into your room to fool him and make him go away.</div>
+            </div>
+            <div class="image-container">
+                <img src="rawlings_images/image (6).png" alt="Image 6">
+                <div class="image-text">Put on your Freddy Fazbear mask quickly when she sneaks into your room to fool her and make her go away.</div>
+            </div>
+            <div class="image-container">
+                <img src="rawlings_images/image (7).png" alt="Image 7">
+                <div class="image-text">Unlike the other animatronics in the vents, once Mangle reaches the vent opening he will never leave. Use the vent-snare to prevent her from making it that far.</div>
+            </div>
+            <div class="image-container">
+                <img src="rawlings_images/image (8).png" alt="Image 8">
+                <div class="image-text">He will try to sneak in through the side vent. Close the side vent and wait until you hear a thud indicating he is gone. If BB slips in, he will temporarily disable your flashlight.</div>
+            </div>
+            <div class="image-container">
+                <img src="rawlings_images/image (9).png" alt="Image 9">
+                <div class="image-text">She will try to sneak in through the side vent. Close the side vent and wait until you hear a thud indicating she is gone. If JJ slips in, she will disable door controls temporarily.</div>
+            </div>
+            <div class="image-container">
+                <img src="rawlings_images/image (10).png" alt="Image 10">
+                <div class="image-text">She climbs through the air vents, but may get stuck when trying to enter your office. Use the vent-snare to prevent her from reaching the opening.</div>
+            </div>
+            <div class="image-container">
+                <img src="rawlings_images/image (11).png" alt="Image 11">
+                <div class="image-text">He will appear in your office poised to attack! Throw on your Freddy mask to make him leave again.</div>
+            </div>
+            <div class="image-container">
+                <img src="rawlings_images/image (12).png" alt="Image 12">
+                <div class="image-text">Keep his music box wound or he will come to get you! The global music box also works against him.</div>
+            </div>
+            <div class="image-container">
+                <img src="rawlings_images/image (13).png" alt="Image 13">
+                <div class="image-text">He will occasionally appear in your office. Throw on your Freddy mask or pull up your monitor quickly to cause him to disappear.</div>
+            </div>
+            <div class="image-container">
+                <img src="rawlings_images/image (14).png" alt="Image 14">
+                <div class="image-text">He makes his way toward the vent opening embedded in the wall in front of you. When he is poised to attack you will see his face looking down at you. Close the vent door to send him away.</div>
+            </div>
+            <div class="image-container">
+                <img src="rawlings_images/image (15).png" alt="Image 15">
+                <div class="image-text">When you see him on your monitor, quickly close it, or he will appear in your office and create an audio disturbance.</div>
+            </div>
+            <div class="image-container">
+                <img src="rawlings_images/image (16).png" alt="Image 16">
+                <div class="image-text">Shine your flashlight on him to cause him to fade away. If you don't, he will jumpscare you, giving time for enemies in the vents to sneak into your office. Heat causes him to appear faster.</div>
+            </div>
+            <div class="image-container">
+                <img src="rawlings_images/image (17).png" alt="Image 17">
+                <div class="image-text">When he appears on your monitor, quickly close it or change the cam to avoid his jumpscare.</div>
+            </div>
+            <div class="image-container">
+                <img src="rawlings_images/image (18).png" alt="Image 18">
+                <div class="image-text">Buy his plush from the Prize Counter when he appears in the hallway to avoid his jumpscare. He can't be stopped by the office door.</div>
+            </div>
+            <div class="image-container">
+                <img src="rawlings_images/image (19).png" alt="Image 19">
+                <div class="image-text">When the Freddles begin to accumulate in your office, shine your flashlight on them before Freddy appears.</div>
+            </div>
+            <div class="image-container">
+                <img src="rawlings_images/image (20).png" alt="Image 20">
+                <div class="image-text">He is invisible to the cameras and can only be seen when he reaches your right doorway. Close the door on his face to send him back into the darkness!</div>
+            </div>
+            <div class="image-container">
+                <img src="rawlings_images/image (21).png" alt="Image 21">
+                <div class="image-text">When the office heats up, she will appear in both halls at the same time. Close both doors to make her vanish. This won't work if the office is 100 degrees or more</div>
+            </div>
+            <div class="image-container">
+                <img src="rawlings_images/image (22).png" alt="Image 22">
+                <div class="image-text">Purchase his plush toy from the Prize Counter when he appears in the right hall to avoid his attack! He can't be stopped by the office door.</div>
+            </div>
+            <div class="image-container">
+                <img src="rawlings_images/image (23).png" alt="Image 23">
+                <div class="image-text">Don't let your mouse cursor linger over Nightmarionne for too long!</div>
+            </div>
+            <div class="image-container">
+                <img src="rawlings_images/image (24).png" alt="Image 24">
+                <div class="image-text">When he is slumped over in your office, do not shine your light on him. When he is sitting up however, you must use your flashlight to reset him.</div>
+            </div>
+            <div class="image-container">
+                <img src="rawlings_images/image (25).png" alt="Image 25">
+                <div class="image-text">Purchase her plush toy from the Prize Counter when she appears in the right hall to avoid her attack! The office door can't stop her.</div>
+            </div>
+            <div class="image-container">
+                <img src="rawlings_images/image (26).png" alt="Image 26">
+                <div class="image-text">Check his curtain to see when his show is set to begin, then be sure to watch his cam at that exact time to postpone the show, otherwise that is when your game will end.</div>
+            </div>
+            <div class="image-container">
+                <img src="rawlings_images/image (27).png" alt="Image 27">
+                <div class="image-text">Difficult to see on the vent radar, he will make his way toward your office. Listen for the sound cue of squeaking metal, then close the vent.</div>
+            </div>
+            <div class="image-container">
+                <img src="rawlings_images/unnamed 6.png" alt="Image 28">
+                <div class="image-text">Jaws will begin to close on the player's screen. If the player does not promptly turn on the power A/C before the jaws close, she will jumpscare the player. The further down the jaws are, the longer they take to disappear.</div>
+            </div>
+            <div class="image-container">
+                <img src="rawlings_images/image (29).png" alt="Image 29">
+                <div class="image-text">???*..</div>
+            </div>
+            <div class="image-container">
+                <img src="rawlings_images/image (30).png" alt="Image 30">
+                <div class="image-text">When you see him sitting in your office, click on him quickly, otherwise he will get in your face with an airhorn, agitating sound-sensitive animatronics.</div>
+            </div>
+            <div class="image-container">
+                <img src="rawlings_images/image (31).png" alt="Image 31">
+                <div class="image-text">She moves through the air ducts making her way toward you. Use the audio-lure to keep her in place. She is immune to the heater.</div>
+            </div>
+            <div class="image-container">
+                <img src="rawlings_images/image (32).png" alt="Image 32">
+                <div class="image-text">He makes his way toward your office using the air ducts. Use the audio-lure to hold him in place, or the heater to push him back.</div>
+            </div>
+            <div class="image-container">
+                <img src="rawlings_images/image (33).png" alt="Image 33">
+                <div class="image-text">He makes his way toward your office using the air ducts. Use the audio-lure to hold him in place, or the heater to push him back</div>
+            </div>
+            <div class="image-container">
+                <img src="rawlings_images/image (34).png" alt="Image 34">
+                <div class="image-text">When he appears in your office, search the cameras to find his guitar. Click the guitar to send him away.</div>
+            </div>
+            <div class="image-container">
+                <img src="rawlings_images/image (35).png" alt="Image 35">
+                <div class="image-text">Check the left and right hallways, then double-click the wet-floor sign to place it on the same side as Rockstar Chica. She won't enter if the sign is in place.</div>
+            </div>
+            <div class="image-container">
+                <img src="rawlings_images/image (36).png" alt="Image 36">
+                <div class="image-text">When you see his parrot, click it, and Rockstar Foxy may offer you some help. This comes with risk, however.</div>
+            </div>
+            <div class="image-container">
+                <img src="rawlings_images/image (37).png" alt="Image 37">
+                <div class="image-text">Keep the noise down, or you'll begin to hear his cymbals crashing faster and faster eventually leading to a jumpscare.</div>
+            </div>
+            <div class="image-container">
+                <img src="rawlings_images/image (38).png" alt="Image 38">
+                <div class="image-text">He's just here to promote his new restaurant. Close the ad when it appears.</div>
+            </div>
+            <div class="image-container">
+                <img src="rawlings_images/image (39).png" alt="Image 39">
+                <div class="image-text">She will appear at random to distract you. There is no way to avoid her.</div>
+            </div>
+            <div class="image-container">
+                <img src="rawlings_images/image (40).png" alt="Image 40">
+                <div class="image-text">He climbs in the vents, but can avoid the vent snare. Listen for his voice, then shut the vent door before he gets through.</div>
+            </div>
+            <div class="image-container">
+                <img src="rawlings_images/image (41).png" alt="Image 41">
+                <div class="image-text">She will appear on the opposite side of your office desk. When she moves, use a controlled shock!</div>
+            </div>
+            <div class="image-container">
+                <img src="rawlings_images/image (42).png" alt="Image 42">
+                <div class="image-text">He will attack once per night, making a lot of noise and causing the lights to flicker before attacking. Close the right vent door to block him.</div>
+            </div>
+            <div class="image-container">
+                <img src="rawlings_images/image (43).png" alt="Image 43">
+                <div class="image-text">He becomes active from noise and heat. He is too far away from the music box to be soothed by it, but the global music box can calm him down.</div>
+            </div>
+            <div class="image-container">
+                <img src="rawlings_images/image (44).png" alt="Image 44">
+                <div class="image-text">When he calls, quickly mute him, otherwise it will create a lengthy audio disturbance. The mute button will appear in different places each time.</div>
+            </div>
+            <div class="image-container">
+                <img src="rawlings_images/image (45).png" alt="Image 45">
+                <div class="image-text">He will appear on a specific screen and sit in his chair. If the player doesn't scare him out of his chair fast enough, he will jumpscare them.</div>
+            </div>
+            <div class="image-container">
+                <img src="rawlings_images/image (46).png" alt="Image 46">
+                <div class="image-text">When summoned, several Minireenas will appear and block the player's view. Unlike in the previous game, the effect is temporary and the Minireenas will leave after a short time, usually about an in-game hour (45 seconds).</div>
+            </div>
+            <div class="image-container">
+                <img src="rawlings_images/image (47).png" alt="Image 47">
+                <div class="image-text">When summoned, Lolbit's face will appear on the screen with the words "PLEASE STAND BY", blocking the player's view, preventing them from using the cameras or doors, and adding about 3 bars to the noise meter. The player must type L-O-L on their keyboard to make it disappear.</div>
+            </div>
+            <div class="image-container">
+                <img src="rawlings_images/found.png" alt="Found">
+                <div class="image-text">He will cause your office to become pitch black for about ten seconds. There is no way to avoid him.</div>
+            </div>
+            <div class="image-container">
+                <img src="rawlings_images/found 2.png" alt="Found 2">
+                <div class="image-text">Like in the previous game, she will walk across the office and must be stopped by clicking on her nose.</div>
+            </div>
+            <div class="image-container">
+                <img src="rawlings_images/found 3.png" alt="Found 3">
+                <div class="image-text">He makes his way toward your office through the air ducts. He isn't often fooled by the audio-lure, but can be pushed back with the heater.</div>
+            </div>
+            <div class="image-container">
+                <img src="rawlings_images/found 6.png" alt="Found 6">
+                <div class="image-text">He will occassionally activate and ask for five Faz-Coins. You can alternatively use the heater to cause him to malfunction.</div>
+            </div>
+            
+        </div>
+    </main>
+    
+    <footer>
+        <h3>Rawlings WDD-130</h3>
+    </footer>
+</body>
+</html>
